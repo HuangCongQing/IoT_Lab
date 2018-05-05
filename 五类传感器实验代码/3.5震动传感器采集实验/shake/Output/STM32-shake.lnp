@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"..\output\startup_stm32f10x_md.o"
+"..\output\main.o"
+"..\output\sensor.o"
+"..\output\stm32f10x_gpio.o"
+"..\output\stm32f10x_rcc.o"
+"..\output\stm32f10x_usart.o"
+"..\output\misc.o"
+"..\output\core_cm3.o"
+"..\output\system_stm32f10x.o"
+"..\output\delay.o"
+"..\output\gpio.o"
+"..\output\uart.o"
+--library_type=microlib --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\Listing\STM32-shake.map" -o ..\Output\STM32-shake.axf
