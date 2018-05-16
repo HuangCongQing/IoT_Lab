@@ -51,7 +51,22 @@ void McuInit(void)
 //**************************************************/
 int main(void)
 { 
-	
+	McuInit(); 
+	GPIO_SetBits(GPIOB, GPIO_Pin_0); //设置485控制引脚为高电平，设置485串口为发送模式 
+	printf("\r\n光敏传感器采集实验\r\n"); 
+	while(1) { 
+		if(delaytime == 500000) // 0.5s时间到 
+			LedOff(4); // 熄灭User1
+			if((delaytime++) >= 1000000) // 1s时间到 
+			{ 
+				delaytime = 0; // 计时清零 
+				
+				value = read_ADC(4) / 4096.0 * 3.3; // 读取转换的AD值 
+				LedOn(4); // 点亮User1 
+				GPIO_SetBits(GPIOB, GPIO_Pin_0); //设置485控制引脚为高电平，设置485串口为发送模式 
+				printf("光敏电阻分压：%0.1f V\r\n",value); // 通过串口2上传 
+			} 
+	}
 }
 /**********************end_file@*****************************************/
 
