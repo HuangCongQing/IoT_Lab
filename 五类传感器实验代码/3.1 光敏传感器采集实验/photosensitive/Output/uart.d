@@ -1,11 +1,11 @@
 ..\output\uart.o: ..\Common_API\uart.c
 ..\output\uart.o: ..\USER\main.h
-..\output\uart.o: D:\keil\ARM\ARMCC\bin\..\include\stdio.h
+..\output\uart.o: D:\Program Files\School\keil\ARM\ARMCC\bin\..\include\stdio.h
 ..\output\uart.o: ..\USER\stm32f10x_conf.h
 ..\output\uart.o: ..\FWlib\inc\stm32f10x_adc.h
 ..\output\uart.o: ..\CMSIS\stm32f10x.h
 ..\output\uart.o: ..\CMSIS\core_cm3.h
-..\output\uart.o: D:\keil\ARM\ARMCC\bin\..\include\stdint.h
+..\output\uart.o: D:\Program Files\School\keil\ARM\ARMCC\bin\..\include\stdint.h
 ..\output\uart.o: ..\CMSIS\system_stm32f10x.h
 ..\output\uart.o: ..\USER\stm32f10x_conf.h
 ..\output\uart.o: ..\FWlib\inc\stm32f10x_gpio.h
