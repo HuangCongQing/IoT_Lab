@@ -4,7 +4,9 @@ IoT(物联网)实验
 >本仓库由[@重庆](https://github.com/HuangCongQing/IoT_Lab)学习整理
 
 ### 准备情况
-
+* 修改`..传感器采集实验/photosensitive/USER/main.c`中main函数代码，完成相应的功能
+* 编译烧录
+* 通过串口助手查看现象
 #### 硬件
 * 物联网基础实验平台（UI-IoT-OPS）
 
