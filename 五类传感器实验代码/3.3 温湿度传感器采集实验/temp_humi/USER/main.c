@@ -53,7 +53,20 @@ void McuInit(void)
 //**************************************************/
 int main(void)
 {
-	
+	McuInit();
+	GPIO_SetBits(GPIOA,GPIO_Pin_1);
+	printf("\r\n温湿度采集实验r\n");
+	while(1)
+	{
+		if(delaytime==500000)
+			LedOff(7);
+		if((delaytime++)>=1000000)
+		{
+			delaytime=0;		
+			GPIO_SetBits(GPIOA,GPIO_Pin_1);
+			SmDHT11ReadData();
+		}
+	}
 }
 /**********************end_file@*****************************************/
 
