@@ -42,7 +42,23 @@ void McuInit(void)
 //**************************************************/
 int main(void)
 {
-	
+	McuInit();
+	GPIO_SetBits(GPIOB,GPIO_Pin_0);
+	printf("\r\n可燃气气体传感器采集实验r\n");
+	while(1)
+	{
+		if(delaytime==500000)
+			LedOff(4);
+		if((delaytime++)>=1000000)
+		{
+			delaytime=0;
+			value=read_ADC(4)/4096.0*3.3;
+			value=value*4*100;
+			LedOn(4);
+			GPIO_SetBits(GPIOB,GPIO_Pin_0);
+			printf("??????:%d ppm\r\n",(uint16_t)value);
+		}
+	}
 }
 /**********************end_file@*****************************************/
 
