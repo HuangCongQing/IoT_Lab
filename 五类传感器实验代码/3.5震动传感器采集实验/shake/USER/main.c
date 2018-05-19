@@ -39,7 +39,32 @@ void McuInit(void)
 //**************************************************/
 int main(void)
 {
-	
+	McuInit();
+	GPIO_SetBits(GPIOA,GPIO_Pin_1);
+	printf("\r\n震动传感器采集实验r\n");
+	while(1)
+	{
+		if(delaytime==500000)
+			LedOff(6);
+		if((delaytime++)>=1000000)
+		{
+			delaytime=0;
+			LedOn(6);
+			if(GetInput(10)==1)
+			{
+				LedOn(7);
+				GPIO_SetBits(GPIOA,GPIO_Pin_1);
+				printf("??\r\n");
+			}
+			else
+			{
+				LedOff(7);
+				GPIO_SetBits(GPIOA,GPIO_Pin_1);
+				printf("??\r\n");
+				
+			}
+		}
+	}
 }
 /**********************end_file@*****************************************/
 
