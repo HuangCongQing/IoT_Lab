@@ -54,13 +54,13 @@ int main(void)
 			{
 				LedOn(7);
 				GPIO_SetBits(GPIOA,GPIO_Pin_1);
-				printf("??\r\n");
+				printf("Õð¶¯£¡£¡\r\n");
 			}
 			else
 			{
 				LedOff(7);
 				GPIO_SetBits(GPIOA,GPIO_Pin_1);
-				printf("??\r\n");
+				printf("¾²Ö¹£¡£¡\r\n");
 				
 			}
 		}
