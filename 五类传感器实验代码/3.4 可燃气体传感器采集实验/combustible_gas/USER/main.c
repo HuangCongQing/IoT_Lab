@@ -56,7 +56,7 @@ int main(void)
 			value=value*4*100;
 			LedOn(4);
 			GPIO_SetBits(GPIOB,GPIO_Pin_0);
-			printf("??????:%d ppm\r\n",(uint16_t)value);
+			printf("可燃气体浓度:%d ppm\r\n",(uint16_t)value);
 		}
 	}
 }
