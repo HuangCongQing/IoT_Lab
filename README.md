@@ -16,7 +16,7 @@ IoT(物联网)实验
 #### 硬件
 * 物联网基础实验平台（UI-IoT-OPS）
 
-#### 软件
+#### 主要软件
 * Keil uVision4(代码编写&&烧录)
 * Altium Designer6(PCB板，原理图绘图)
 * 串口调试工具
