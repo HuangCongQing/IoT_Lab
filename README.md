@@ -3,17 +3,22 @@ IoT(物联网)实验
 
 >本仓库由[@重庆](https://github.com/HuangCongQing/IoT_Lab)学习整理
 
+### 实验环境
+1. 硬件：1个光敏传感器模块、1个ST-Link调试器、2根USB2.0方口线、1根USB3.0数据线、1个RJ11线，1台PC机；
+2. 软件：Windows 7/XP、MDK集成开发环境、串口调试器。
+
 ### 准备情况
+* 传感器等设备和电脑连接
 * 修改`..传感器采集实验/../USER/main.c`中main函数代码，完成相应的功能
 * 编译烧录
-* 通过串口助手查看现象
+* 使传感器周围状态改变，然后通过串口助手查看现象
 
 #### 硬件
 * 物联网基础实验平台（UI-IoT-OPS）
 
 #### 软件
-* Keil uVision4(代码&&烧录)
-* Altium Designer6(PCB板)
+* Keil uVision4(代码编写&&烧录)
+* Altium Designer6(PCB板，原理图绘图)
 * 串口调试工具
 
 ### DONE
