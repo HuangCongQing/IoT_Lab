@@ -22,7 +22,7 @@ IoT(物联网)实验
 
 * Keil uVision4(代码编写&&烧录)
 * Altium Designer6(PCB板，原理图绘图)
-* 串口调试工具（观察实验数据，得出结论）
+* 串口调试工具【波特率设为**115200**】（观察实验数据，得出结论）
 ![](https://upload-images.jianshu.io/upload_images/4340772-08b3289ef009adfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### DONE
