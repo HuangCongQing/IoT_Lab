@@ -3,6 +3,10 @@ IoT(物联网)实验
 
 >本仓库由[@重庆](https://github.com/HuangCongQing/IoT_Lab)学习整理
 
+### 学学学
+
+*[AD绘制原理图，PCB](./AD.md) 
+
 ### 实验环境
 
 1. 硬件：1个光敏传感器模块、1个ST-Link调试器、2根USB2.0方口线、1根USB3.0数据线、1个RJ11线，1台PC机；
