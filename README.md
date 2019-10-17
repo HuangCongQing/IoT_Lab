@@ -1,5 +1,5 @@
 # IoT_Lab
-IoT(物联网)实验 
+IoT(物联网)实验 | 重庆邮电大学·物联网工程
 
 >本仓库由[@重庆](https://github.com/HuangCongQing/IoT_Lab)学习整理
 Fork或借鉴请注明出处 [@ChungKing](https://github.com/HuangCongQing) . Thx
